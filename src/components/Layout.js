@@ -14,10 +14,7 @@ import Logo from "./Logo"
 import { theme, Reset, Box, Paragraph, Icon, Button } from "./styles"
 
 const Container = styled.div`
-  width: calc(100% - ${themeGet("space.5")} * 2);
-  max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.5")} * 2);
-  height: 100vh;
-  padding: 0 ${themeGet("space.5")};
+  min-height: 100vh;
   margin: auto;
 
   ${themeGet("media.phone")} {
@@ -33,7 +30,7 @@ const Header = styled.header`
   background: linear-gradient(
     rgba(227, 250, 246, 1) 15%,
     rgba(227, 250, 246, 0.8) 70%,
-    #fafafa
+    rgba(227, 250, 246, 0)
   );
   width: 100%;
 

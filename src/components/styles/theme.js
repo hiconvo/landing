@@ -1,126 +1,126 @@
-const toRems = arr => arr.map(px => (px / 10).toFixed(1).toString() + "rem");
-const toPx = arr => arr.map(px => px + "px");
+const toRems = arr => arr.map(px => (px / 10).toFixed(1).toString() + "rem")
+const toPx = arr => arr.map(px => px + "px")
 
-const space = toRems([0, 4, 8, 16, 32, 64, 128, 256, 512]);
-const fontSizes = toRems([12, 14, 16, 18, 24, 30, 36, 48, 64]);
+const space = toRems([0, 4, 8, 16, 32, 64, 128, 256, 512])
+const fontSizes = toRems([12, 14, 16, 18, 24, 30, 36, 48, 64])
 const lineHeights = {
   normal: 1.25,
   title: 1.5,
-  paragraph: 1.75
-};
-const breakpoints = toPx([768, 1280]);
+  paragraph: 1.75,
+}
+const breakpoints = toPx([768, 1280])
 const media = {
   phone: `@media screen and (max-width: ${breakpoints[0]})`,
-  tablet: `@media screen and (max-width: ${breakpoints[1]})`
-};
+  tablet: `@media screen and (max-width: ${breakpoints[1]})`,
+}
 
-const sizeScale = toRems([18, 24, 30, 36, 48, 60, 72, 96, 128]);
+const sizeScale = toRems([18, 24, 30, 36, 48, 60, 72, 96, 128])
 
-const opacities = [0.1, 0.35, 0.5, 0.65, 0.8];
+const opacities = [0.1, 0.35, 0.5, 0.65, 0.8]
 
-const transparent = "transparent";
+const transparent = "transparent"
 
-const trueBlack = "#000000";
-const bodytext = "#24292e";
-const black = "#1b1f23";
-const darkGray = "#2f363d";
-const gray = "#646d75";
-const mediumGray = "#959da5";
-const lightGray = "#d1d5da";
-const veryLightGray = "#f3f3f3";
-const snow = "#f6f8fa";
-const white = "#fafafa";
-const trueWhite = "#ffffff";
+const trueBlack = "#000000"
+const bodytext = "#24292e"
+const black = "#1b1f23"
+const darkGray = "#2f363d"
+const gray = "#646d75"
+const mediumGray = "#959da5"
+const lightGray = "#d1d5da"
+const veryLightGray = "#f3f3f3"
+const snow = "#f6f8fa"
+const white = "#fafafa"
+const trueWhite = "#ffffff"
 
 const blacks = [
   `rgba(0, 0, 0, ${opacities[0]})`,
   `rgba(0, 0, 0, ${opacities[1]})`,
   `rgba(0, 0, 0, ${opacities[2]})`,
   `rgba(0, 0, 0, ${opacities[3]})`,
-  `rgba(0, 0, 0, ${opacities[4]})`
-];
+  `rgba(0, 0, 0, ${opacities[4]})`,
+]
 
 const whites = [
   `rgba(255, 255, 255, ${opacities[0]})`,
   `rgba(255, 255, 255, ${opacities[1]})`,
   `rgba(255, 255, 255, ${opacities[2]})`,
   `rgba(255, 255, 255, ${opacities[3]})`,
-  `rgba(255, 255, 255, ${opacities[4]})`
-];
+  `rgba(255, 255, 255, ${opacities[4]})`,
+]
 
-const primary100 = "#e3faf6";
-const primary300 = "#45dfc8";
-const primary500 = "#00D4B5";
-const primary700 = "#00bfa2";
-const primary900 = "#006556";
+const primary100 = "#e3faf6"
+const primary300 = "#45dfc8"
+const primary500 = "#00D4B5"
+const primary700 = "#00bfa2"
+const primary900 = "#006556"
 
-const success100 = "#8ae87a";
-const success300 = "#20d400";
-const success500 = "#19a800";
-const success700 = "#158c00";
-const success900 = "#0f6500";
+const success100 = "#8ae87a"
+const success300 = "#20d400"
+const success500 = "#19a800"
+const success700 = "#158c00"
+const success900 = "#0f6500"
 
-const warning100 = "#e9a580";
-const warning300 = "#e1814e";
-const warning500 = "#d44a00";
-const warning700 = "#bf4200";
-const warning900 = "#a73a00";
+const warning100 = "#e9a580"
+const warning300 = "#e1814e"
+const warning500 = "#d44a00"
+const warning700 = "#bf4200"
+const warning900 = "#a73a00"
 
-const error100 = "#fbeaec";
-const error300 = "#e5697c";
-const error500 = "#d40020";
-const error700 = "#bf001c";
-const error900 = "#a80019";
+const error100 = "#fbeaec"
+const error300 = "#e5697c"
+const error500 = "#d40020"
+const error700 = "#bf001c"
+const error900 = "#a80019"
 
-const lightyellow = "lightyellow";
+const lightyellow = "lightyellow"
 
 const socialMediaColors = {
   facebook: "#3B5998",
   facebookHover: "#22407F",
   twitter: "#38A1F3",
-  twitterHover: "#1F88DA"
-};
+  twitterHover: "#1F88DA",
+}
 
 const SYSTEM_FONTS =
-  '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+  '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
 
 const fonts = {
   sans: `"Inter", ${SYSTEM_FONTS}`,
   serif: `Georgia, Cambria, "Times New Roman", Times, serif`,
-  mono: "monospace"
-};
+  mono: "monospace",
+}
 
 const fontWeights = {
   regular: 400,
   semiBold: 500,
   bold: 700,
-  extraBold: 800
-};
+  extraBold: 800,
+}
 
 const letterSpacings = {
   normal: "normal",
   spaced: "0.05rem",
-  crazy: "0.4rem"
-};
+  crazy: "0.4rem",
+}
 
 const radii = {
   small: space[1],
   normal: space[3],
   special: space[4],
-  round: "1000em"
-};
+  round: "1000em",
+}
 
 const shadows = {
   normal: `${space[0]} ${space[1]} ${space[2]} ${space[0]} ${blacks[0]}`,
   heavy: `${space[0]} ${space[2]} ${space[3]} ${space[0]} ${blacks[0]}`,
-  spread: `rgba(0, 0, 0, 0.1) 0px 0px 24px -2px`
-};
+  spread: `rgba(0, 0, 0, 0.1) 0px 0px 24px -2px`,
+}
 
 const animations = {
   fast: "200ms",
   brisk: "500ms",
-  lazy: "1000ms"
-};
+  lazy: "1000ms",
+}
 
 export default {
   // ----- MAIN THEME -----
@@ -180,7 +180,7 @@ export default {
     gradients: {
       primary: `linear-gradient(to bottom right, ${primary500}, #8A96FD)`,
       toTop: `linear-gradient(to top, ${trueWhite}, transparent)`,
-      toBottom: `linear-gradient(to bottom, ${trueWhite}, transparent)`
+      toBottom: `linear-gradient(to bottom, ${trueWhite}, transparent)`,
     },
 
     // Grays
@@ -203,7 +203,7 @@ export default {
     transparent,
 
     // Social media
-    ...socialMediaColors
+    ...socialMediaColors,
   },
 
   // Opacities (0 - 1)
@@ -222,7 +222,7 @@ export default {
     veryLightGray: `1px solid ${veryLightGray}`,
     snow: `1px solid ${snow}`,
     brandColor: `1px solid ${primary500}`,
-    error: `1px solid ${error900}`
+    error: `1px solid ${error900}`,
   },
 
   // Radii
@@ -240,7 +240,7 @@ export default {
     header: 200,
     tooltip: 800,
     notifications: 900,
-    dialog: 1000
+    dialog: 1000,
   },
 
   // ----- VARIANTS -----
@@ -255,7 +255,7 @@ export default {
     lightGray: { color: lightGray, "&:hover": { color: mediumGray } },
     mediumGray: { color: mediumGray, "&:hover": { color: darkGray } },
     darkGray: { color: darkGray, "&:hover": { color: black } },
-    black: { color: black, "&:hover": { color: trueBlack } }
+    black: { color: black, "&:hover": { color: trueBlack } },
   },
 
   // All of our text variants
@@ -271,7 +271,7 @@ export default {
     h5: { fontSize: fontSizes[2], [media.desktop]: { fontSize: fontSizes[3] } },
     h5Static: { fontSize: fontSizes[3] },
     h6: { fontSize: fontSizes[1], [media.desktop]: { fontSize: fontSizes[2] } },
-    h6Static: { fontSize: fontSizes[2] }
+    h6Static: { fontSize: fontSizes[2] },
   },
 
   // All of our button variants
@@ -279,19 +279,20 @@ export default {
     primary: {
       color: white,
       backgroundColor: primary700,
+      boxShadow: shadows.normal,
       borderRadius: radii.special,
       "&:hover": {
         backgroundColor: primary900,
-        boxShadow: shadows.normal
-      }
+        boxShadow: shadows.normal,
+      },
     },
     secondary: {
       color: black,
       backgroundColor: veryLightGray,
       borderRadius: radii.special,
       "&:hover": {
-        backgroundColor: lightGray
-      }
+        backgroundColor: lightGray,
+      },
     },
     tertiary: {
       color: black,
@@ -302,8 +303,8 @@ export default {
       backgroundColor: transparent,
       borderRadius: radii.normal,
       "&:hover": {
-        color: mediumGray
-      }
+        color: mediumGray,
+      },
     },
     brand: {
       color: primary700,
@@ -311,8 +312,8 @@ export default {
       backgroundColor: "inherit",
       borderRadius: radii.normal,
       "&:hover": {
-        color: primary900
-      }
+        color: primary900,
+      },
     },
     white: {
       color: bodytext,
@@ -320,9 +321,9 @@ export default {
       backgroundColor: trueWhite,
       borderRadius: radii.special,
       "&:hover": {
-        backgroundColor: lightGray
-      }
-    }
+        backgroundColor: lightGray,
+      },
+    },
   },
 
   // Layout
@@ -331,5 +332,5 @@ export default {
   headerHeight: "12rem",
   footerHeight: "6rem",
   sidebarWidth: "28rem",
-  sidebarChromeHeight: "5rem"
-};
+  sidebarChromeHeight: "5rem",
+}
