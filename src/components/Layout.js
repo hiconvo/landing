@@ -16,11 +16,6 @@ import { theme, Reset, Box, Paragraph, Icon, Button } from "./styles"
 const Container = styled.div`
   min-height: 100vh;
   margin: auto;
-
-  ${themeGet("media.phone")} {
-    width: calc(100% - ${themeGet("space.4")} * 2);
-    padding: 0 ${themeGet("space.4")};
-  }
 `
 
 const Header = styled.header`
@@ -33,11 +28,6 @@ const Header = styled.header`
     rgba(227, 250, 246, 0)
   );
   width: 100%;
-
-  ${themeGet("media.phone")} {
-    width: calc(100% - ${themeGet("space.4")} * 2);
-    padding: 0;
-  }
 `
 
 const InnerHeader = styled.div`
@@ -50,7 +40,9 @@ const InnerHeader = styled.div`
   margin: auto;
 `
 
-const Footer = styled.footer``
+const Footer = styled.footer`
+  margin-bottom: 4rem;
+`
 
 const Layout = ({ children }) => {
   return (
@@ -62,7 +54,18 @@ const Layout = ({ children }) => {
             <Box flexDirection="row">
               <Logo width="4rem" />
             </Box>
-            <Box>
+            <Box as="nav" flexDirection="row">
+              <Button
+                as="a"
+                href="https://blog.hiconvo.com"
+                variant="tertiary"
+                flexDirection="row"
+                alignItems="center"
+                mr={2}
+              >
+                Blog
+              </Button>
+
               <Button
                 as="a"
                 href="https://app.hiconvo.com"

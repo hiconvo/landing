@@ -1,21 +1,26 @@
 import React from "react"
 import styled from "styled-components"
 import TextLoop from "react-text-loop"
+import { themeGet } from "@styled-system/theme-get"
 
 import screenshot from "../images/convo-screenshot.png"
-import Section from "./Section"
-import { Box, Heading, Button, Text, Paragraph } from "./styles"
+import { Box, Heading, Button, Text, Paragraph, Icon } from "./styles"
+
+const Container = styled.section`
+  width: calc(100% - ${themeGet("space.5")} * 2);
+  max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.5")} * 2);
+  margin: auto;
+`
 
 const SpecialBackground = styled.div`
   background: linear-gradient(rgba(227, 250, 246, 1) 15%, #fafafa);
   width: 100%;
-  height: 100vh;
 `
 
 export default function Hero() {
   return (
     <SpecialBackground>
-      <Section>
+      <Container>
         <Box pt="10vh" mb={4}>
           <Heading as="h1" fontSize={6} fontWeight="bold" textAlign="center">
             Convo is{" "}
@@ -27,12 +32,22 @@ export default function Hero() {
             </TextLoop>
           </Heading>
           <Paragraph textAlign="center">
-            Convo makes planning events with your real friends easy.
+            Convo makes planning events with your real friends easy{" "}
+            <span role="img" aria-label="woman">
+              💁
+            </span>{" "}
+            <span role="img" aria-label="calendar">
+              📅
+            </span>{" "}
+            <span role="img" aria-label="celebrate">
+              🎊
+            </span>
+            .
           </Paragraph>
         </Box>
         <Box mb={4}>
           <Box width="40%" margin="auto">
-            <Button variant="primary">
+            <Button as="a" variant="primary" href="https://app.hiconvo.com">
               <Text fontWeight="semiBold" color="trueWhite">
                 Sign up now
               </Text>
@@ -40,7 +55,12 @@ export default function Hero() {
           </Box>
         </Box>
         <Box as="img" src={screenshot} width="100%" margin="auto" />
-      </Section>
+        <Box mt={4}>
+          <Paragraph textAlign="center" color="darkGray">
+            <Icon name="arrow_downward" fontSize={6} />
+          </Paragraph>
+        </Box>
+      </Container>
     </SpecialBackground>
   )
 }
