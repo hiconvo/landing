@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Convo`,
-    description: `Convo is messaging and events.`,
+    description: `Convo makes planning events with your real friends easy.`,
     author: `@AlexanderRichey`,
   },
   plugins: [
