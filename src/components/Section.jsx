@@ -7,6 +7,11 @@ const Container = styled.section`
   max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.5")} * 2);
   margin: 12rem auto;
   justify-content: ${props => (props.center ? "center" : "flex-start")};
+
+  ${themeGet("media.phone")} {
+    width: calc(100% - ${themeGet("space.4")} * 2);
+    max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.4")} * 2);
+  }
 `
 
 export default function Section({ children, center }) {

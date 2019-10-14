@@ -38,6 +38,11 @@ const InnerHeader = styled.div`
   width: calc(100% - ${themeGet("space.5")} * 2);
   max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.5")} * 2);
   margin: auto;
+
+  ${themeGet("media.phone")} {
+    width: calc(100% - ${themeGet("space.3")} * 2);
+    max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.3")} * 2);
+  }
 `
 
 const Footer = styled.footer`

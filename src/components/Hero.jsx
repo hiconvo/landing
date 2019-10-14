@@ -10,6 +10,11 @@ const Container = styled.section`
   width: calc(100% - ${themeGet("space.5")} * 2);
   max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.5")} * 2);
   margin: auto;
+
+  ${themeGet("media.phone")} {
+    width: calc(100% - ${themeGet("space.2")} * 2);
+    max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.2")} * 2);
+  }
 `
 
 const SpecialBackground = styled.div`
@@ -22,13 +27,17 @@ export default function Hero() {
     <SpecialBackground>
       <Container>
         <Box pt="10vh" mb={4}>
-          <Heading as="h1" fontSize={6} fontWeight="bold" textAlign="center">
+          <Heading
+            as="h1"
+            fontSize={[4, 6]}
+            fontWeight="bold"
+            textAlign="center"
+          >
             Convo is{" "}
             <TextLoop>
               <span>messaging and events.</span>
               <span>an alternative to Facebook.</span>
               <span>slow paced social media.</span>
-              <span>not tracking you.</span>
             </TextLoop>
           </Heading>
           <Paragraph textAlign="center">
