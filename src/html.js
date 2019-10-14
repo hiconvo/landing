@@ -20,6 +20,17 @@ export default function HTML(props) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/inter-ui@3.7.0/inter.min.css"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function (w,d,s,o,f,js,fjs) {
+  w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+  js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+  js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+  }(window, document, 'script', 'plausible', 'https://plausible.io/js/p.js'));
+
+  plausible('page')`,
+          }}
+        ></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
