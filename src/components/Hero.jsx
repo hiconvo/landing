@@ -63,7 +63,16 @@ export default function Hero() {
             </Button>
           </Box>
         </Box>
-        <Box as="img" src={screenshot} width="100%" margin="auto" />
+        <Box width="100%" pb="62%" position="relative" margin="auto">
+          <Box
+            as="img"
+            src={screenshot}
+            width="100%"
+            position="absolute"
+            top="0"
+            left="0"
+          />
+        </Box>
         <Box mt={4}>
           <Paragraph textAlign="center" color="darkGray">
             <Icon name="arrow_downward" fontSize={6} />

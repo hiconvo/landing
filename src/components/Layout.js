@@ -34,6 +34,7 @@ const InnerHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: ${themeGet("headerHeight")};
   width: calc(100% - ${themeGet("space.5")} * 2);
   max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.5")} * 2);
@@ -67,6 +68,7 @@ const Layout = ({ children }) => {
                 flexDirection="row"
                 alignItems="center"
                 mr={2}
+                mb={0}
               >
                 Blog
               </Button>
@@ -77,6 +79,7 @@ const Layout = ({ children }) => {
                 variant="tertiary"
                 flexDirection="row"
                 alignItems="center"
+                mb={0}
               >
                 Login
                 <Icon name="arrow_forward" ml={1} />

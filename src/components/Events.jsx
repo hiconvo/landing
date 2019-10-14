@@ -18,14 +18,19 @@ export default function Events() {
             Planning events on Facebook doesn't work.
           </Heading>
           <Paragraph>
-            Many have silenced Facebook notifications and do not check Facebook
-            often. As a result, we often find out about events and parties after
-            they have already happened.
+            Too many of us have silenced Facebook notifications and do not check
+            Facebook often. As a result, we often find out about events and
+            parties after they have already happened.
           </Paragraph>
           <Paragraph>
-            Convo solves this problem. We send minimal notifications by email
-            &ndash; invitations and a daily digest only if you missed something
-            important.
+            Convo is a new platform for planning events and connecting with real
+            people that solves this problem. We send minimal notifications by
+            email &ndash; invitations and a daily digest only if you missed
+            something important.
+          </Paragraph>
+          <Paragraph>
+            Your guests can RSVP in one click, without having to create an
+            account on Convo.
           </Paragraph>
         </Box>
         <Box width={["100%", "50%"]}>

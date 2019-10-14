@@ -21,8 +21,9 @@ export default function WhatIs() {
             Connect meaningfully
           </Heading>
           <Paragraph>
-            A Convo is a thin abstraction layer over email that makes it easy to
-            find people by their real names.
+            Convo also allows you to connect with people directly via what we
+            call Convos. A Convo is a thin abstraction layer over email that
+            makes it easy to find people by their real names.
           </Paragraph>
           <Paragraph>
             When you start a Convo with someone, we create a custom email
