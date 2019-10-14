@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <SpecialBackground>
       <Container>
-        <Box pt="10vh" mb={4}>
+        <Box pt={["16vh", "10vh"]} mb={4}>
           <Heading
             as="h1"
             fontSize={[4, 6]}
