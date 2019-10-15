@@ -21,9 +21,9 @@ export default function FitIn() {
           How Convo fits in
         </Heading>
         <Paragraph textAlign="left">
-          Convo is intended to facilitate real-world connections. More like
-          email and texting than other social media platforms, Convo is private,
-          email based, and does not broadcast how popular you are (or aren't).
+          Convo is intended to support real-world connections. More like email
+          and texting than other social media platforms, Convo is private, email
+          based, and does not broadcast how popular you are (or aren't).
         </Paragraph>
         <Paragraph textAlign="left">
           By relying on email (and by not spamming you), Convo does not
