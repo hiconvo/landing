@@ -15,7 +15,7 @@ export default function Events() {
             fontWeight="semiBold"
             textAlign={["center", "left"]}
           >
-            Planning events on Facebook doesn't work.
+            Planning events on Facebook doesn't work
           </Heading>
           <Paragraph>
             Too many of us have silenced Facebook notifications and do not check
