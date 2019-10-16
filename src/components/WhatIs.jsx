@@ -21,7 +21,7 @@ export default function WhatIs() {
             Connect meaningfully
           </Heading>
           <Paragraph>
-            Convo also allows you to connect with people directly via{" "}
+            Convo allows you to connect with people directly via{" "}
             <Text fontStyle="italic">Convos</Text>. A Convo is a layer over
             email that makes it easy to find people by their real names.
           </Paragraph>

@@ -15,6 +15,7 @@ const Container = styled.section`
   ${themeGet("media.phone")} {
     width: calc(100% - ${themeGet("space.2")} * 2);
     max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.2")} * 2);
+    overflow: hidden;
   }
 `
 
@@ -39,12 +40,13 @@ export default function Hero() {
   return (
     <SpecialBackground>
       <Container>
-        <Box pt={["16vh", "10rem"]} mb={4}>
+        <Box pt={["17vh", "10rem"]} mb={4}>
           <Heading
             as="h1"
             fontSize={[4, 6]}
             fontWeight="bold"
             textAlign="center"
+            whiteSpace={["unset", "nowrap"]}
           >
             Convo is{" "}
             <TextLoop
