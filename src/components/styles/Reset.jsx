@@ -1,8 +1,8 @@
-import React from "react";
-import { createGlobalStyle } from "styled-components";
+import React from "react"
+import { createGlobalStyle } from "styled-components"
 
-import CropperStyles from "./Cropper";
-import theme from "./theme";
+import CropperStyles from "./Cropper"
+import theme from "./theme"
 
 const Globals = createGlobalStyle`
   html {
@@ -67,7 +67,14 @@ const Globals = createGlobalStyle`
       font-size: 8px;
     }
   }
-`;
+
+  .displayInline {
+    display: inline-block;
+  }
+  .displayInline div {
+    display: inline-block;
+  }
+`
 
 export default ({ children }) => (
   <React.Fragment>
@@ -75,4 +82,4 @@ export default ({ children }) => (
     <CropperStyles />
     {children}
   </React.Fragment>
-);
+)

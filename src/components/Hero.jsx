@@ -50,6 +50,7 @@ export default function Hero() {
           >
             Convo is{" "}
             <TextLoop
+              className="displayInline"
               children={[
                 "messaging and events.",
                 "an alternative to Facebook.",
