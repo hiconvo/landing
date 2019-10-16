@@ -30,10 +30,10 @@ export default function Hero() {
     transform: "scale(1)",
     from: {
       opacity: 0,
-      transform: "scale(1.2)",
+      transform: "scale(0.9)",
     },
     config: {
-      duration: 1200,
+      duration: 800,
     },
   })
 
@@ -47,6 +47,7 @@ export default function Hero() {
             fontWeight="bold"
             textAlign="center"
             whiteSpace={["unset", "nowrap"]}
+            height="1.5em"
           >
             Convo is{" "}
             <TextLoop
