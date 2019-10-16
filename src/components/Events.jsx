@@ -18,9 +18,9 @@ export default function Events() {
             Planning events on Facebook doesn't work
           </Heading>
           <Paragraph>
-            Too many of us have silenced Facebook notifications and do not check
-            Facebook often. As a result, we often find out about events and
-            parties after they have already happened.
+            Too many of us have silenced Facebook notifications and do not
+            routinely check Facebook. As a result, we often find out about
+            events and parties after they have already happened.
           </Paragraph>
           <Paragraph>
             Convo is a new platform for planning events and connecting with real
@@ -29,8 +29,8 @@ export default function Events() {
             something important.
           </Paragraph>
           <Paragraph>
-            Your guests can RSVP in one click, without having to create an
-            account on Convo.
+            Your guests can RSVP in one click, without having to create accounts
+            on Convo.
           </Paragraph>
         </Box>
         <Box width={["100%", "50%"]}>

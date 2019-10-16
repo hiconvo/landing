@@ -47,11 +47,13 @@ export default function Hero() {
             textAlign="center"
           >
             Convo is{" "}
-            <TextLoop>
-              <span>messaging and events.</span>
-              <span>an alternative to Facebook.</span>
-              <span>slow paced social media.</span>
-            </TextLoop>
+            <TextLoop
+              children={[
+                "messaging and events.",
+                "an alternative to Facebook.",
+                "slow paced social media.",
+              ]}
+            />
           </Heading>
           <Paragraph textAlign="center">
             Convo makes planning events with your real friends easy{" "}

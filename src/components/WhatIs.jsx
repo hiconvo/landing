@@ -2,7 +2,7 @@ import React from "react"
 
 import convo from "../images/convo.png"
 import Section from "./Section"
-import { Box, Heading, Paragraph } from "./styles"
+import { Box, Heading, Paragraph, Text } from "./styles"
 
 export default function WhatIs() {
   return (
@@ -21,9 +21,9 @@ export default function WhatIs() {
             Connect meaningfully
           </Heading>
           <Paragraph>
-            Convo also allows you to connect with people directly via what we
-            call Convos. A Convo is a layer over email that makes it easy to
-            find people by their real names.
+            Convo also allows you to connect with people directly via{" "}
+            <Text fontStyle="italic">Convos</Text>. A Convo is a layer over
+            email that makes it easy to find people by their real names.
           </Paragraph>
           <Paragraph>
             When you start a Convo with someone, we create a custom email
