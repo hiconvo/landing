@@ -25,10 +25,6 @@ export default function FitIn() {
           and texting than other social media platforms, Convo is private, email
           based, and does not broadcast how popular you are (or aren't).
         </Paragraph>
-        <Paragraph textAlign="left">
-          By relying on email (and by not spamming you), Convo does not
-          introduce yet another source of annoying notifications to check.
-        </Paragraph>
       </Box>
     </Section>
   )

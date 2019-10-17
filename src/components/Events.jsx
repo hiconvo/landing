@@ -15,22 +15,12 @@ export default function Events() {
             fontWeight="semiBold"
             textAlign={["center", "left"]}
           >
-            Planning events on Facebook doesn't work
+            Plan events with ease
           </Heading>
           <Paragraph>
-            Too many of us have silenced Facebook notifications and do not
-            routinely check Facebook. As a result, we often find out about
-            events and parties after they have already happened.
-          </Paragraph>
-          <Paragraph>
-            Convo is a new platform for planning events and connecting with real
-            people that solves this problem. We send minimal notifications by
-            email &ndash; invitations and a daily digest only if you missed
-            something important.
-          </Paragraph>
-          <Paragraph>
-            Your guests can RSVP in one click, without having to create accounts
-            on Convo.
+            Convo makes it easy to plan events with real people. Invite your
+            guests by name or email and they can RSVP in one click without
+            having to create accounts of their own.
           </Paragraph>
         </Box>
         <Box width={["100%", "50%"]}>
