@@ -20,12 +20,15 @@ export default function WhatIs() {
           >
             Connect meaningfully
           </Heading>
-          <Paragraph>
+          <Paragraph fontSize={3}>
             Convo allows you to connect with people directly via{" "}
-            <Text fontStyle="italic">Convos</Text>. A Convo is a layer over
-            email that makes it easy to find people by their real names.
+            <Text fontStyle="italic" fontSize={3}>
+              Convos
+            </Text>
+            . A Convo is a layer over email that makes it easy to find people by
+            their real names.
           </Paragraph>
-          <Paragraph>
+          <Paragraph fontSize={3}>
             When you start a Convo with someone, we create a custom email
             address that only you and those you've invited can use. Your
             personal contact info is always kept private.

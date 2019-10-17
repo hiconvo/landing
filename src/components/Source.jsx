@@ -29,9 +29,14 @@ export default function Source() {
         >
           Publicly available source code
         </Heading>
-        <Paragraph textAlign="left">
+        <Paragraph fontSize={3}>
           Convo is developed in the open. You can view our source code on{" "}
-          <Text as="a" href="https://github.com/hiconvo" color="primary700">
+          <Text
+            as="a"
+            href="https://github.com/hiconvo"
+            color="primary900"
+            fontSize={3}
+          >
             GitHub
             <Icon name="call_made" ml={1} />
           </Text>{" "}

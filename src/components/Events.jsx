@@ -2,7 +2,7 @@ import React from "react"
 
 import event from "../images/event.png"
 import Section from "./Section"
-import { Box, Heading, Paragraph } from "./styles"
+import { Box, Heading, Paragraph, Text, Icon } from "./styles"
 
 export default function Events() {
   return (
@@ -17,10 +17,22 @@ export default function Events() {
           >
             Plan events with ease
           </Heading>
-          <Paragraph>
+          <Paragraph fontSize={3}>
             Convo makes it easy to plan events with real people. Invite your
             guests by name or email and they can RSVP in one click without
             having to create accounts of their own.
+          </Paragraph>
+          <Paragraph fontSize={3}>
+            <Text
+              as="a"
+              fontSize={3}
+              fontWeight="semiBold"
+              href="https://blog.hiconvo.com/hello-world"
+              color="primary900"
+            >
+              Learn more
+              <Icon name="call_made" ml={1} />
+            </Text>{" "}
           </Paragraph>
         </Box>
         <Box width={["100%", "50%"]}>

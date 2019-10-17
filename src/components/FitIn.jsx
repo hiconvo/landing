@@ -18,9 +18,9 @@ export default function FitIn() {
           textAlign="center"
           mt={4}
         >
-          How Convo fits in
+          A new kind of social network
         </Heading>
-        <Paragraph textAlign="left">
+        <Paragraph fontSize={3}>
           Convo is intended to support real-world connections. More like email
           and texting than other social media platforms, Convo is private, email
           based, and does not broadcast how popular you are (or aren't).
