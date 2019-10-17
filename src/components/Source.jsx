@@ -35,6 +35,7 @@ export default function Source() {
             as="a"
             href="https://github.com/hiconvo"
             color="primary900"
+            fontWeight="semiBold"
             fontSize={3}
           >
             GitHub

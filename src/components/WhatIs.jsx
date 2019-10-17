@@ -2,7 +2,7 @@ import React from "react"
 
 import convo from "../images/convo.png"
 import Section from "./Section"
-import { Box, Heading, Paragraph, Text } from "./styles"
+import { Box, Heading, Paragraph, Text, Icon } from "./styles"
 
 export default function WhatIs() {
   return (
@@ -29,9 +29,16 @@ export default function WhatIs() {
             their real names.
           </Paragraph>
           <Paragraph fontSize={3}>
-            When you start a Convo with someone, we create a custom email
-            address that only you and those you've invited can use. Your
-            personal contact info is always kept private.
+            <Text
+              as="a"
+              fontSize={3}
+              fontWeight="semiBold"
+              href="https://blog.hiconvo.com/hello-world"
+              color="primary900"
+            >
+              Learn more
+              <Icon name="call_made" ml={1} />
+            </Text>{" "}
           </Paragraph>
         </Box>
       </Box>

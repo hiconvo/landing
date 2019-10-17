@@ -68,11 +68,24 @@ const Globals = createGlobalStyle`
     }
   }
 
-  .displayInline {
+  .textLoop {
     display: inline-block;
   }
-  .displayInline div {
+  .textLoop div {
     display: inline-block;
+  }
+
+  ${theme.media.phone} {
+    .textLoop {
+      display: block !important;
+      text-align: center;
+      width: 100%;
+    }
+    .textLoop div {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
   }
 `
 

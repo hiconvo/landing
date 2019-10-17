@@ -24,6 +24,10 @@ const SpecialBackground = styled.div`
   width: 100%;
 `
 
+const NoWrap = styled.span`
+  white-space: nowrap;
+`
+
 export default function Hero() {
   const aniProps = useSpring({
     opacity: 1,
@@ -40,37 +44,41 @@ export default function Hero() {
   return (
     <SpecialBackground>
       <Container>
-        <Box pt={["17vh", "10rem"]} mb={4}>
+        <Box pt={["12rem", "10rem"]} mb={3}>
           <Heading
             as="h1"
-            fontSize={[4, 6]}
+            fontSize={[5, 6]}
             fontWeight="bold"
             textAlign="center"
             whiteSpace={["unset", "nowrap"]}
-            height="1.5em"
+            height={["3.4em", "1.6em"]}
           >
             Convo is{" "}
             <TextLoop
-              className="displayInline"
+              className="textLoop"
               children={[
                 "messaging and events.",
                 "an alternative to Facebook.",
                 "slow paced social media.",
+                "a new kind of social network.",
               ]}
             />
           </Heading>
-          <Paragraph textAlign="center">
-            Convo makes planning events with your real friends easy{" "}
-            <span role="img" aria-label="woman">
-              💁
-            </span>{" "}
-            <span role="img" aria-label="calendar">
-              📅
-            </span>{" "}
-            <span role="img" aria-label="celebrate">
-              🎊
-            </span>
-            .
+          <Paragraph textAlign="center" fontSize={3}>
+            Convo makes planning events with your{" "}
+            <NoWrap>
+              real friends easy{" "}
+              <span role="img" aria-label="woman">
+                💁
+              </span>{" "}
+              <span role="img" aria-label="calendar">
+                📅
+              </span>{" "}
+              <span role="img" aria-label="celebrate">
+                🎊
+              </span>
+              .
+            </NoWrap>
           </Paragraph>
         </Box>
         <Box mb={4}>
