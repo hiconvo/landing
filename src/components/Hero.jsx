@@ -51,7 +51,7 @@ export default function Hero() {
             fontWeight="bold"
             textAlign="center"
             whiteSpace={["unset", "nowrap"]}
-            height={["3.4em", "1.6em"]}
+            height={["3.4em", "3.4em", "1.6em"]}
           >
             Convo is{" "}
             <TextLoop
