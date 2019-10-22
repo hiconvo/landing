@@ -60,7 +60,6 @@ export default function Hero() {
                 "for planning private events.",
                 "an alternative to Facebook.",
                 "slow paced social media.",
-                "a new kind of social network.",
               ]}
             />
           </Heading>
