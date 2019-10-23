@@ -67,7 +67,7 @@ const Layout = ({ children }) => {
                 variant="tertiary"
                 flexDirection="row"
                 alignItems="center"
-                mr={2}
+                mr={1}
                 mb={0}
               >
                 Blog
@@ -79,9 +79,21 @@ const Layout = ({ children }) => {
                 variant="tertiary"
                 flexDirection="row"
                 alignItems="center"
+                mr={1}
                 mb={0}
               >
                 Login
+              </Button>
+
+              <Button
+                as="a"
+                href="https://app.hiconvo.com"
+                variant="tertiary"
+                flexDirection="row"
+                alignItems="center"
+                mb={0}
+              >
+                Sign up
                 <Icon name="arrow_forward" ml={1} />
               </Button>
             </Box>
