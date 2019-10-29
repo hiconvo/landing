@@ -1,14 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import styled, { ThemeProvider } from "styled-components"
 import { themeGet } from "@styled-system/theme-get"
+import { Link } from "gatsby"
 
 import Logo from "./Logo"
 import { theme, Reset, Box, Paragraph, Icon, Button } from "./styles"
@@ -57,9 +51,11 @@ const Layout = ({ children }) => {
         <Reset />
         <Header>
           <InnerHeader>
-            <Box flexDirection="row">
-              <Logo width="4rem" />
-            </Box>
+            <Link to="/">
+              <Box flexDirection="row">
+                <Logo width="4rem" />
+              </Box>
+            </Link>
             <Box as="nav" flexDirection="row">
               <Button
                 as="a"
@@ -113,7 +109,9 @@ const Layout = ({ children }) => {
               <a href="https://twitter.com/AlexanderRichey">@AlexanderRichey</a>{" "}
               in Seattle, WA.
               <br />
-              Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+              Copyright &copy; {new Date().getFullYear()}. All rights reserved.{" "}
+              <Link to="/privacy">Privacy policy</Link>.{" "}
+              <Link to="/terms">Terms of service</Link>.
             </Paragraph>
           </Footer>
         </Container>
