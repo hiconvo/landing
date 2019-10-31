@@ -90,7 +90,7 @@ export default function Hero() {
           </Box>
         </Box>
         <animated.div style={aniProps}>
-          <Box width="100%" pb="62%" position="relative" margin="auto">
+          <Box width="100%" pb="65%" position="relative" margin="auto">
             <Box
               as="img"
               src={screenshot}
