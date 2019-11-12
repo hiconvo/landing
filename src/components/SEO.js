@@ -21,12 +21,14 @@ function SEO({ description, lang, meta, title }) {
             description
             author
             site
+            baseUrl
           }
         }
       }
     `
   )
 
+  const image = `${site.siteMetadata.baseUrl}${logo}`
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -54,8 +56,12 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.baseUrl,
+        },
+        {
           property: `og:image`,
-          content: logo,
+          content: image,
         },
         {
           name: `twitter:card`,
@@ -79,7 +85,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `twitter:image`,
-          content: logo,
+          content: image,
+        },
+        {
+          property: `fb:app_id`,
+          content: `406328056661427`,
         },
       ].concat(meta)}
     />
