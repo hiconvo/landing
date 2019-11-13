@@ -8,7 +8,7 @@ const lineHeights = {
   title: 1.5,
   paragraph: 1.75,
 }
-const breakpoints = toPx([768, 1280])
+const breakpoints = toPx([767, 1279])
 const media = {
   phone: `@media screen and (max-width: ${breakpoints[0]})`,
   tablet: `@media screen and (max-width: ${breakpoints[1]})`,
