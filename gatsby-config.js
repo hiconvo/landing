@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Convo`,
+    title: `Convo | Alternative to Facebook for private events`,
     description: `Convo makes planning events with your real friends easy.`,
     author: `@AlexanderRichey`,
     site: `@hiconvo`,
