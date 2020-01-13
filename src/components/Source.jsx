@@ -27,7 +27,7 @@ export default function Source() {
           textAlign="center"
           mt={4}
         >
-          Publicly available source code
+          View the source code.
         </Heading>
         <Paragraph fontSize={3}>
           Convo is developed in the open. You can view our source code on{" "}

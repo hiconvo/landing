@@ -57,14 +57,14 @@ export default function Hero() {
             <TextLoop
               className="textLoop"
               children={[
-                "for planning private events.",
                 "an alternative to Facebook.",
-                "slow paced social media.",
+                "for planning private events.",
+                "a new kind of social network.",
               ]}
             />
           </Heading>
           <Paragraph textAlign="center" fontSize={3}>
-            Convo makes planning events with your{" "}
+            Convo makes events and sharing with your{" "}
             <NoWrap>
               real friends easy{" "}
               <span role="img" aria-label="woman">

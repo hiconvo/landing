@@ -5,7 +5,7 @@ import { themeGet } from "@styled-system/theme-get"
 import { Link } from "gatsby"
 
 import Logo from "./Logo"
-import { theme, Reset, Box, Paragraph, Icon, Button } from "./styles"
+import { theme, Reset, Box, Paragraph, Icon, Button, Text } from "./styles"
 
 const Container = styled.div`
   min-height: 100vh;
@@ -100,6 +100,15 @@ const Layout = ({ children }) => {
           <main>{children}</main>
 
           <Footer>
+            <Box mb={6}>
+              <Box width="40%" margin="auto">
+                <Button as="a" variant="primary" href="https://app.hiconvo.com">
+                  <Text fontWeight="semiBold" color="trueWhite">
+                    Sign up now
+                  </Text>
+                </Button>
+              </Box>
+            </Box>
             <Paragraph fontSize={0} color="mediumGray" textAlign="center">
               Made with{" "}
               <span role="img" aria-label="heart">

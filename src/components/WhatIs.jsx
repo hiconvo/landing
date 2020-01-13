@@ -18,15 +18,15 @@ export default function WhatIs() {
             fontWeight="semiBold"
             textAlign={["center", "left"]}
           >
-            Connect meaningfully
+            Share photos, text, and links.
           </Heading>
           <Paragraph fontSize={3}>
             Convo allows you to connect with people directly via{" "}
             <Text fontStyle="italic" fontSize={3}>
               Convos
             </Text>
-            . A Convo is a layer over email that makes it easy to find people by
-            their real names.
+            . A Convo is like a Facebook post except that it's only visible to
+            the peope you choose.
           </Paragraph>
           <Paragraph fontSize={3}>
             <Text

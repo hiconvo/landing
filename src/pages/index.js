@@ -13,8 +13,8 @@ const IndexPage = () => (
     <SEO title="Convo" />
     <Hero />
     <Events />
-    <FitIn />
     <WhatIs />
+    <FitIn />
     <Source />
   </Layout>
 )
