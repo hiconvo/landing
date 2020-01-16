@@ -18,7 +18,7 @@ export default function WhatIs() {
             fontWeight="semiBold"
             textAlign={["center", "left"]}
           >
-            Share photos, text, and links.
+            Share photos, text, and links
           </Heading>
           <Paragraph fontSize={3}>
             Convo allows you to connect with people directly via{" "}

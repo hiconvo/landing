@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import {
   space,
   color,
@@ -7,15 +7,16 @@ import {
   flexbox,
   border,
   background,
-  position
-} from "styled-system";
-import { float, cursor, overflow } from "./utils";
+  position,
+  zIndex,
+} from "styled-system"
+import { float, cursor, overflow } from "./utils"
 
 const Box = styled("div")(
   {
     boxSizing: "border-box",
     WebkitFontSmoothing: "antialiased",
-    outline: 0
+    outline: 0,
   },
   space,
   color,
@@ -27,8 +28,9 @@ const Box = styled("div")(
   position,
   float,
   overflow,
-  cursor
-);
+  cursor,
+  zIndex
+)
 
 Box.defaultProps = {
   as: "div",
@@ -38,9 +40,9 @@ Box.defaultProps = {
   fontWeight: "regular",
   color: "bodytext",
   display: "flex",
-  flexDirection: "column"
-};
+  flexDirection: "column",
+}
 
-Box.displayName = "Box";
+Box.displayName = "Box"
 
-export default Box;
+export default Box

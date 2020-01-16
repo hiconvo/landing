@@ -18,7 +18,7 @@ export default function FitIn() {
           textAlign="center"
           mt={4}
         >
-          Join a new kind of social network.
+          How Convo fits in
         </Heading>
         <Paragraph fontSize={3}>
           Convo is intended to support real-world connections. Unlike other

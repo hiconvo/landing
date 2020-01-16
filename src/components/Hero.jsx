@@ -1,10 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import TextLoop from "react-text-loop"
-import { useSpring, animated } from "react-spring"
 import { themeGet } from "@styled-system/theme-get"
 
-import screenshot from "../images/convo-screenshot.png"
+import HeroImage from "./HeroImage"
 import { Box, Heading, Button, Text, Paragraph, Icon } from "./styles"
 
 const Container = styled.section`
@@ -29,18 +28,6 @@ const NoWrap = styled.span`
 `
 
 export default function Hero() {
-  const aniProps = useSpring({
-    opacity: 1,
-    transform: "scale(1)",
-    from: {
-      opacity: 0,
-      transform: "scale(0.9)",
-    },
-    config: {
-      duration: 800,
-    },
-  })
-
   return (
     <SpecialBackground>
       <Container>
@@ -57,14 +44,14 @@ export default function Hero() {
             <TextLoop
               className="textLoop"
               children={[
-                "an alternative to Facebook.",
-                "for planning private events.",
                 "a new kind of social network.",
+                "an alternative to Facebook.",
+                "for your real friends.",
               ]}
             />
           </Heading>
           <Paragraph textAlign="center" fontSize={3}>
-            Convo makes events and sharing with your{" "}
+            Convo makes planning events and sharing with your{" "}
             <NoWrap>
               real friends easy{" "}
               <span role="img" aria-label="woman">
@@ -89,18 +76,7 @@ export default function Hero() {
             </Button>
           </Box>
         </Box>
-        <animated.div style={aniProps}>
-          <Box width="100%" pb="65%" position="relative" margin="auto">
-            <Box
-              as="img"
-              src={screenshot}
-              width="100%"
-              position="absolute"
-              top="0"
-              left="0"
-            />
-          </Box>
-        </animated.div>
+        <HeroImage />
         <Box mt={4}>
           <Paragraph textAlign="center" color="darkGray">
             <Icon name="arrow_downward" fontSize={6} />
