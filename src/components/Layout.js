@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
         <Header>
           <InnerHeader>
             <Link to="/">
-              <Box flexDirection="row">
+              <Box flexDirection="row" width="4rem">
                 <Logo width="4rem" />
               </Box>
             </Link>
