@@ -11,7 +11,7 @@ export default function WhatIs() {
         <Box width={["100%", "50%"]}>
           <Box as="img" src={convo} width="100%" margin="auto" />
         </Box>
-        <Box width={["100%", "50%"]} pr={[0, 5]}>
+        <Box width={["100%", "50%"]} pl={[0, 5]}>
           <Heading
             as="h2"
             fontSize={4}
