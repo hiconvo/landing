@@ -33,9 +33,9 @@ const PrivacyPage = () => (
       <Paragraph>
         Your privacy is important to us. It is Convo's policy to respect your
         privacy regarding any information we may collect from you across our
-        website, <a href="https://hiconvo.com">https://hiconvo.com</a>,{" "}
-        <a href="https://app.hiconvo.com">https://app.hiconvo.com</a>, and other
-        sites we own and operate.
+        website, <a href="https://convo.events">https://convo.events</a>,{" "}
+        <a href="https://app.convo.events">https://app.convo.events</a>, and
+        other sites we own and operate.
       </Paragraph>
       <Paragraph>
         We only ask for personal information when we truly need it to provide a

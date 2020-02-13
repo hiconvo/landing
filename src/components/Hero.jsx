@@ -69,7 +69,7 @@ export default function Hero() {
         </Box>
         <Box mb={4}>
           <Box width="40%" margin="auto">
-            <Button as="a" variant="primary" href="https://app.hiconvo.com">
+            <Button as="a" variant="primary" href="https://app.convo.events">
               <Text fontWeight="semiBold" color="trueWhite">
                 Sign up now
               </Text>

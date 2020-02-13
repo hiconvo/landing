@@ -45,8 +45,8 @@ const TermsOfService = () => (
       </Heading>
       <Paragraph>
         By accessing the website at{" "}
-        <a href="https://hiconvo.com">https://hiconvo.com</a> or{" "}
-        <a href="https://app.hiconvo.com">https://app.hiconvo.com</a>, you are
+        <a href="https://convo.events">https://convo.events</a> or{" "}
+        <a href="https://app.convo.events">https://app.convo.events</a>, you are
         agreeing to be bound by these terms of service, all applicable laws and
         regulations, and agree that you are responsible for compliance with any
         applicable local laws. If you do not agree with any of these terms, you

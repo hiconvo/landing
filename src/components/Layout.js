@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
             <Box as="nav" flexDirection="row">
               <Button
                 as="a"
-                href="https://blog.hiconvo.com"
+                href="https://blog.convo.events"
                 variant="tertiary"
                 flexDirection="row"
                 alignItems="center"
@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
 
               <Button
                 as="a"
-                href="https://app.hiconvo.com"
+                href="https://app.convo.events"
                 variant="tertiary"
                 flexDirection="row"
                 alignItems="center"
@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
 
               <Button
                 as="a"
-                href="https://app.hiconvo.com"
+                href="https://app.convo.events"
                 variant="tertiary"
                 flexDirection="row"
                 alignItems="center"
@@ -102,7 +102,11 @@ const Layout = ({ children }) => {
           <Footer>
             <Box mb={6}>
               <Box width="40%" margin="auto">
-                <Button as="a" variant="primary" href="https://app.hiconvo.com">
+                <Button
+                  as="a"
+                  variant="primary"
+                  href="https://app.convo.events"
+                >
                   <Text fontWeight="semiBold" color="trueWhite">
                     Sign up now
                   </Text>

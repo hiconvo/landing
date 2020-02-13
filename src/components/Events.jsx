@@ -27,7 +27,7 @@ export default function Events() {
               as="a"
               fontSize={3}
               fontWeight="semiBold"
-              href="https://blog.hiconvo.com/hello-world"
+              href="https://blog.convo.events/hello-world"
               color="primary900"
             >
               Learn more

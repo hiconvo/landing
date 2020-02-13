@@ -1,0 +1,5 @@
+# Redirect domain aliases to primary domain
+https://hiconvo.com/* https://convo.events/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain
+https://gallant-morse-8cd4b3.netlify.com/* https://convo.events/:splat 301!
