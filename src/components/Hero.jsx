@@ -44,9 +44,9 @@ export default function Hero() {
             <TextLoop
               className="textLoop"
               children={[
+                "for planning private events.",
+                "for sharing with your friends.",
                 "a new kind of social network.",
-                "an alternative to Facebook.",
-                "for your real friends.",
               ]}
             />
           </Heading>

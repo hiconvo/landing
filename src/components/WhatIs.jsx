@@ -7,7 +7,7 @@ import { Box, Heading, Paragraph, Text, Icon } from "./styles"
 export default function WhatIs() {
   return (
     <Section center={true}>
-      <Box flexDirection={["column", "row"]} alignItems="center">
+      <Box flexDirection={["column-reverse", "row"]} alignItems="center">
         <Box width={["100%", "50%"]}>
           <Box as="img" src={convo} width="100%" margin="auto" />
         </Box>
