@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import TextLoop from "react-text-loop"
 import { themeGet } from "@styled-system/theme-get"
 
 import HeroImage from "./HeroImage"
@@ -40,15 +39,7 @@ export default function Hero() {
             whiteSpace={["unset", "nowrap"]}
             height={["3.4em", "1.6em", "1.6em"]}
           >
-            Convo is{" "}
-            <TextLoop
-              className="textLoop"
-              children={[
-                "for planning private events.",
-                "for sharing with your friends.",
-                "a new kind of social network.",
-              ]}
-            />
+            Convo is for planning private events.
           </Heading>
           <Paragraph textAlign="center" fontSize={3}>
             Convo makes planning events and sharing with your{" "}
