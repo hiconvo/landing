@@ -17,7 +17,16 @@ export default function HeroImage() {
 
   return (
     <animated.div style={aniProps}>
-      <Box as="img" src={screenshot2} width="100%" />
+      <Box width="100%" pb="65%" position="relative" margin="auto">
+        <Box
+          as="img"
+          src={screenshot2}
+          width="100%"
+          position="absolute"
+          top="0"
+          left="0"
+        />
+      </Box>
     </animated.div>
   )
 }
