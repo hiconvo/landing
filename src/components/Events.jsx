@@ -15,7 +15,7 @@ export default function Events() {
             fontWeight="semiBold"
             textAlign={["center", "left"]}
           >
-            Plan events
+            Plan events <span role="img" aria-label="party">🥳</span>
           </Heading>
           <Paragraph fontSize={3}>
             Convo makes it easy to plan events with real people. Invite your

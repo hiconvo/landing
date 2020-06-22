@@ -46,7 +46,7 @@ export default function Hero() {
             <NoWrap>
               real friends easy{" "}
               <span role="img" aria-label="woman">
-                💁
+                💁🏼
               </span>{" "}
               <span role="img" aria-label="calendar">
                 📅

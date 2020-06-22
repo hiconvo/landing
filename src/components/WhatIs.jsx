@@ -1,6 +1,6 @@
 import React from "react"
 
-import convo from "../images/convo.png"
+import magiclink from "../images/magiclink.png"
 import Section from "./Section"
 import { Box, Heading, Paragraph, Text, Icon } from "./styles"
 
@@ -9,7 +9,7 @@ export default function WhatIs() {
     <Section center={true}>
       <Box flexDirection={["column-reverse", "row"]} alignItems="center">
         <Box width={["100%", "50%"]}>
-          <Box as="img" src={convo} width="100%" margin="auto" />
+          <Box as="img" src={magiclink} width="100%" margin="auto" />
         </Box>
         <Box width={["100%", "50%"]} pl={[0, 5]}>
           <Heading
@@ -18,15 +18,10 @@ export default function WhatIs() {
             fontWeight="semiBold"
             textAlign={["center", "left"]}
           >
-            Share photos, text, and links
+            Message your invitations with magic links <span role="img" aria-label="wizard">🧙🏾‍♀️</span>
           </Heading>
           <Paragraph fontSize={3}>
-            Convo allows you to connect with people directly via{" "}
-            <Text fontStyle="italic" fontSize={3}>
-              Convos
-            </Text>
-            . A Convo is like a Facebook post except that it's only visible to
-            the peope you choose.
+            If you don't know your guest's email address, you can message them a link instead. Anyone who clicks on a magic link is given access to your event and can RSVP. You can also deactivate magic links if they get into the wrong hands. <span role="img" aria-label="sparkles">✨</span>
           </Paragraph>
           <Paragraph fontSize={3}>
             <Text
