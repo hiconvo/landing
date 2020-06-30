@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
                 <Logo width="4rem" />
               </Box>
             </Link>
-            <Box as="nav" flexDirection="row">
+            <Box as="nav" flexDirection="row" alignItems="center">
               <Button
                 as="a"
                 href="https://blog.convo.events"
@@ -84,7 +84,9 @@ const Layout = ({ children }) => {
               <Button
                 as="a"
                 href="https://app.convo.events"
-                variant="tertiary"
+                variant="primary"
+                p={3}
+                height="3rem"
                 flexDirection="row"
                 alignItems="center"
                 mb={0}
