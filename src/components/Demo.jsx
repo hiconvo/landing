@@ -7,9 +7,14 @@ export default function Demo() {
   const [dims, setDims] = useState({ width: "735", height: "450" })
 
   useEffect(() => {
-    const mq = window.matchMedia(`(max-width: 800px)`)
-    if (mq.matches) {
-      setDims({ width: "400", height: "230" })
+    const tablet = window.matchMedia(`(max-width: 800px)`)
+    if (tablet.matches) {
+      setDims({ width: "600", height: "350" })
+    }
+
+    const phone = window.matchMedia(`(max-width: 700px)`)
+    if (phone.matches) {
+      setDims({ width: "300", height: "180" })
     }
   }, [])
 
