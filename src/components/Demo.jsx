@@ -1,17 +1,17 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 import Section from "./Section"
 import { Box, Heading, Paragraph } from "./styles"
 
 export default function Demo() {
-  let width = "735"
-  let height = "450"
+  const [dims, setDims] = useState({ width: "735", height: "450" })
 
-  const mq = window.matchMedia(`(max-width: 800px)`)
-  if (mq.matches) {
-    width = "400"
-    height = "230"
-  }
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: 800px)`)
+    if (mq.matches) {
+      setDims({ width: "400", height: "230" })
+    }
+  }, [])
 
   return (
     <Section center={true}>
@@ -32,8 +32,8 @@ export default function Demo() {
         <Box
           as="iframe"
           title="demo"
-          width={width}
-          height={height}
+          width={dims.width}
+          height={dims.height}
           src="https://www.youtube.com/embed/ni8k3HFDiGI"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
