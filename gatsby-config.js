@@ -4,7 +4,7 @@ module.exports = {
     description: `Convo makes planning events with your real friends easy.`,
     author: `@AlexanderRichey`,
     site: `@hiconvo`,
-    baseUrl: `https://hiconvo.com`,
+    baseUrl: `https://convo.events`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
