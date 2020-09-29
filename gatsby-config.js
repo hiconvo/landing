@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#fafafa`,
         theme_color: `#24292e`,
         display: `minimal-ui`,
-        icon: `src/images/convo-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/convo-logo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`,

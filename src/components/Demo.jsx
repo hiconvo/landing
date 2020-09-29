@@ -29,7 +29,7 @@ export default function Demo() {
           mt={4}
           mb={4}
         >
-          Watch a quick demo{" "}
+          Watch a 13 minute demo{" "}
           <span role="img" aria-label="tv">
             📺
           </span>
@@ -51,8 +51,8 @@ export default function Demo() {
       </Box>
       <Box maxWidth="60rem" margin="auto" mt={4}>
         <Paragraph fontSize={3}>
-          Watch a quick demonstration of how to create an event, invite people
-          with a magic link, add contacts, and share items on your feed.
+          Watch a demonstration of how to create an event, invite people with a
+          magic link, add contacts, and share items on your feed.
         </Paragraph>
       </Box>
     </Section>

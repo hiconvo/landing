@@ -7,8 +7,10 @@ import { Box } from "./styles"
 export default function HeroImage() {
   const aniProps = useSpring({
     transform: "scale(1)",
+    opacity: "1",
     from: {
       transform: "scale(0.9)",
+      opacity: "0",
     },
     config: {
       duration: 800,
