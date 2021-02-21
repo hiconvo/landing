@@ -1,47 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled, { ThemeProvider } from "styled-components"
-import { themeGet } from "@styled-system/theme-get"
-import { Link } from "gatsby"
 
-import Logo from "./Logo"
-import { theme, Reset, Box, Paragraph, Icon, Button, Text } from "./styles"
+import { theme, Reset } from "./styles"
 
 const Container = styled.div`
   min-height: 100vh;
   margin: auto;
-`
-
-const Header = styled.header`
-  position: fixed;
-  display: flex;
-  z-index: 30;
-  background: linear-gradient(
-    rgba(227, 250, 246, 1) 15%,
-    rgba(227, 250, 246, 0.8) 70%,
-    rgba(227, 250, 246, 0)
-  );
-  width: 100%;
-`
-
-const InnerHeader = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  height: ${themeGet("headerHeight")};
-  width: calc(100% - ${themeGet("space.5")} * 2);
-  max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.5")} * 2);
-  margin: auto;
-
-  ${themeGet("media.phone")} {
-    width: calc(100% - ${themeGet("space.3")} * 2);
-    max-width: calc(${themeGet("pageMaxWidth")} - ${themeGet("space.3")} * 2);
-  }
-`
-
-const Footer = styled.footer`
-  margin-bottom: 4rem;
+  background-color: #fafafa;
 `
 
 const Layout = ({ children }) => {
@@ -49,74 +15,8 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <React.Fragment>
         <Reset />
-        <Header>
-          <InnerHeader>
-            <Link to="/">
-              <Box flexDirection="row" width="4rem">
-                <Logo width="4rem" />
-              </Box>
-            </Link>
-            <Box as="nav" flexDirection="row" alignItems="center">
-              <Button
-                as="a"
-                href="https://app.convo.events"
-                variant="tertiary"
-                flexDirection="row"
-                alignItems="center"
-                mr={1}
-                mb={0}
-              >
-                Login
-              </Button>
-
-              <Button
-                as="a"
-                href="https://app.convo.events"
-                variant="primary"
-                p={3}
-                height="3rem"
-                flexDirection="row"
-                alignItems="center"
-                mb={0}
-              >
-                Sign up
-                <Icon name="arrow_forward" ml={1} />
-              </Button>
-            </Box>
-          </InnerHeader>
-        </Header>
-
         <Container>
           <main>{children}</main>
-
-          <Footer>
-            <Box mb={6}>
-              <Box width="40%" margin="auto">
-                <Button
-                  as="a"
-                  variant="primary"
-                  href="https://app.convo.events"
-                >
-                  <Text fontWeight="semiBold" color="trueWhite">
-                    Sign up now
-                  </Text>
-                </Button>
-              </Box>
-            </Box>
-            <Paragraph fontSize={0} color="mediumGray" textAlign="center">
-              Made with{" "}
-              <span role="img" aria-label="heart">
-                ❤️
-              </span>{" "}
-              by{" "}
-              <a href="https://twitter.com/AlexanderRichey">@AlexanderRichey</a>{" "}
-              in Seattle, WA.
-              <br />
-              Copyright &copy; {new Date().getFullYear()}. All rights reserved.{" "}
-              <Link to="/privacy">Privacy policy</Link>.{" "}
-              <Link to="/terms">Terms of service</Link>.
-            </Paragraph>
-          </Footer>
         </Container>
       </React.Fragment>
     </ThemeProvider>
