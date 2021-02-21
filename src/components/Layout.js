@@ -5,9 +5,7 @@ import styled, { ThemeProvider } from "styled-components"
 import { theme, Reset } from "./styles"
 
 const Container = styled.div`
-  min-height: 100vh;
   margin: auto;
-  background-color: #fafafa;
 `
 
 const Layout = ({ children }) => {
