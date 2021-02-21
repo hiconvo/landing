@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 const IndexPage = () => (
   <Layout>
     <SEO title="Convo" />
-    <Box alignItems="center" justifyContent="center" minHeight="100vh">
+    <Box alignItems="center" justifyContent="center" minHeight="50vh">
       <Box maxWidth="60ch" margin={4}>
         <Heading fontSize={5} fontWeight="semiBold">
           Bye

@@ -1,7 +1,6 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
 
-import CropperStyles from "./Cropper"
 import theme from "./theme"
 
 const Globals = createGlobalStyle`
@@ -92,7 +91,6 @@ const Globals = createGlobalStyle`
 export default ({ children }) => (
   <React.Fragment>
     <Globals />
-    <CropperStyles />
     {children}
   </React.Fragment>
 )
